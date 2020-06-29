@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/style.css" >
+    <title>CheckBox</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="form-for-login">
+                <span class="login-form-title" id="login">Login to continue</span>
+                <input class="form-for-login_email" type="text" name="username" placeholder="Email">
+                <input class="form-for-login_password" type="password" name="password" placeholder="Password">
+                <input class="form-for-login_button" type="submit" name="submit" value="Login">
+                <a class="login-form-title signup" name="change">or Sign up</a>
+            </div>
+        </form>
+    </div>
+    <div class="container_none">
+    <div class="container-for-registration">
+        <form class="form">
+            <div class="form-for-registration">
+                <span class="login-form-title">Sign up</span>
+                <input class="form-for-login_email_reg" type="text" name="username" placeholder="Email">
+                <input class="form-for-login_password_reg" type="password" name="password" placeholder="Password">
+                <input class="registration-button" type="submit" name="registration" value="Sign up">
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="notes_container">
+        <div class="notes_container__textarea">
+            <textarea id="note-textarea" cols="100" autofocus placeholder="Начните писать"></textarea>
+            <button class="notes_container__textarea__button" id="note-create_button">+</button>
+        </div>
+        
+        <div class="notes_container__list">
+        <ul class="notes_container__item"></ul>
+        </div>
+
+        <div>
+            <a class="log_out" name="exit">Выйти</a>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script>
+    <script type="module" src="src/js/config/firebase.js"></script>
+    <script type="module" src="src/js/autentification.js"></script>
+    <script type="module" src="src/index.js"></script>
+</body>
+
+</html>
